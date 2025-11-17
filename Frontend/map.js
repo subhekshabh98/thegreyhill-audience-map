@@ -26,3 +26,4 @@ async function uploadFile() {
       .addTo(map);
   });
 }
+<script src="map.js"></script>
