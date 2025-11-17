@@ -4,41 +4,25 @@
   <title>The Greyhill – Audience Map</title>
 
   <!-- Mapbox CSS -->
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    #map {
-      width: 100%;
-      height: 500px;
-      border: 1px solid #ccc;
-    }
-
-    .container {
-      padding: 20px;
-    }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
-  <h1>Audience Mapping Prototype</h1>
+<h1>Audience Mapping Prototype</h1>
 
-  <input type="file" id="fileInput">
-  <button onclick="uploadFile()">Upload Excel File</button>
+<input type="file" id="fileInput">
+<button onclick="uploadFile()">Upload Excel File</button>
 
-  <div id="map"></div>
-</div>
+<!-- Map container -->
+<div id="map" style="width:100%; height:500px; margin-top:20px;"></div>
 
-<!-- Mapbox JS -->
+<!-- Mapbox JS (load BEFORE your script!) -->
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-<!-- Your map script -->
+<!-- Your JS -->
 <script src="./map.js"></script>
 
 </body>
