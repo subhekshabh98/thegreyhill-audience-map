@@ -18,10 +18,10 @@ async function uploadFile() {
   });
 
   const data = await res.json();
-  console.log("Uploaded:", data);
+  console.log("Excel rows:", data);
 
-  // Example mock markers
-  data.forEach(row => {
-    new mapboxgl.Marker().setLngLat([-3.18, 55.95]).addTo(map);
-  });
+  // Plot mock marker (just to test map)
+  new mapboxgl.Marker()
+    .setLngLat([-3.1883, 55.9533]) // Edinburgh
+    .addTo(map);
 }
