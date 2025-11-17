@@ -1,6 +1,6 @@
 import express from "express";
 import multer from "multer";
-import parseExcel from "./Backend/parseExcel.js";
+import parseExcel from "./parseExcel.js";
 import cors from "cors";
 
 const app = express();
