@@ -7,3 +7,9 @@ const map = new mapboxgl.Map({
   center: [-3.5, 57],
   zoom: 5.3
 });
+
+fetch("http://localhost:3000/upload", {
+  method: "POST",
+  body: formData
+})
+
