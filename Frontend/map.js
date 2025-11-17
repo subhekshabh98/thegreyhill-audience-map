@@ -18,12 +18,10 @@ async function uploadFile() {
   });
 
   const data = await res.json();
+  console.log("Uploaded:", data);
 
-  // Example plotting mock coordinates
+  // Example mock markers
   data.forEach(row => {
-    new mapboxgl.Marker()
-      .setLngLat([ -3.18, 55.95 ])
-      .addTo(map);
+    new mapboxgl.Marker().setLngLat([-3.18, 55.95]).addTo(map);
   });
 }
-<script src="map.js"></script>
